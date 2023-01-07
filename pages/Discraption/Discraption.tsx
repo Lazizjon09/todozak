@@ -14,7 +14,8 @@ function Discraption() {
 
 		useEffect(() => {
 			if(typeof window !== 'undefined') {
-				setData(JSON.parse(window.localStorage.getItem('data')))
+				setData(JSON.parse(localStorage.getItem('data')!))
+
 			}
 		}, [])
 		
